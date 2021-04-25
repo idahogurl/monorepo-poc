@@ -20,8 +20,25 @@
 
       // This will invoke common/autoinstallers/rush-prettier/node_modules/.bin/pretty-quick
       "shellCommand": "pretty-quick --staged"
+    },
+    {
+      "name": "sort-deps",
+      "commandKind": "bulk",
+      "summary": "Used by the pre-commit Git hook. This command sorts dependencies in package.json.",
+      "enableParallelism": true
+    },
+    {
+      "name": "lint",
+      "commandKind": "bulk",
+      "summary": "Used by the pre-commit Git hook. This command lints project.",
+      "enableParallelism": true
+    },
+    {
+      "name": "test",
+      "commandKind": "bulk",
+      "summary": "Used by the pre-commit Git hook. This command runs Jest for Next.js projects.",
+      "enableParallelism": true
     }
-    // {
     //   /**
     //    * (Required) Determines the type of custom command.
     //    * Rush's "bulk" commands are invoked separately for each project.  Rush will look in
