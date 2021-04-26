@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import * from '@shared/components';
 
 function showAlert(): void {
   window.alert('With typescript and Jest');
