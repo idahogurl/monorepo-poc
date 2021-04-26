@@ -11,6 +11,7 @@
   "scripts": {
     "build": "heft build --clean",
     "build:watch": "heft build",
+    "lint": "",
     "sort-deps": "prettier-package-json --write ./package.json",
     "test": "echo \"Error: no test specified\""
   },

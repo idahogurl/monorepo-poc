@@ -3,4 +3,8 @@
 # exit with non-zero status after issuing an appropriate message if
 # it wants to stop the commit.
 
-node common/scripts/install-run-rush.js test || exit $?
+node common/scripts/install-run-rush.js test
+if [[ "$?" == 0 ]]; then
+else
+    exit 1;
+fi

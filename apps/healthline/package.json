@@ -9,7 +9,7 @@
     "lint": "eslint . --ext ts --ext tsx --ext js",
     "sort-deps": "prettier-package-json --write ./package.json",
     "start": "next start",
-    "test": "pnpm lint && jest"
+    "test": "jest"
   },
   "dependencies": {
     "@shared/components": "~1.0.0",
