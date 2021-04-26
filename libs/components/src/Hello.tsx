@@ -1,13 +1,13 @@
 import * as React from 'react';
 
-export interface Props {
+export interface HelloProps {
   name: string;
   enthusiasmLevel?: number;
   onIncrement?: () => void;
   onDecrement?: () => void;
 }
 
-function Hello({ name, enthusiasmLevel = 1, onIncrement, onDecrement }: Props) {
+export function Hello({ name, enthusiasmLevel = 1, onIncrement, onDecrement }: HelloProps) {
   if (enthusiasmLevel <= 0) {
     throw new Error('You could be a little more enthusiastic. :D');
   }
@@ -22,8 +22,6 @@ function Hello({ name, enthusiasmLevel = 1, onIncrement, onDecrement }: Props) {
     </div>
   );
 }
-
-export default Hello;
 
 // helpers
 

@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import * from '@shared/components';
+import { Hello } from '@shared/components';
 
 function showAlert(): void {
   window.alert('With typescript and Jest');
@@ -16,6 +16,7 @@ export const Home = (): JSX.Element => (
       <h1 className="title">
         Welcome to <a href="https://nextjs.org">Next.js!</a>
       </h1>
+      <Hello name="Rebecca" />
 
       <p className="description">
         Get started by editing <code>pages/index.tsx</code>

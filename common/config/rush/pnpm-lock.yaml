@@ -2,7 +2,8 @@ dependencies:
   '@rush-temp/components': file:projects/components.tgz
   '@rush-temp/healthline': file:projects/healthline.tgz
   '@rushstack/eslint-config': 2.3.4_eslint@7.25.0+typescript@4.2.4
-  '@rushstack/heft-web-rig': 0.2.22
+  '@rushstack/heft': 0.29.1
+  '@rushstack/heft-web-rig': 0.2.22_@rushstack+heft@0.29.1
   '@testing-library/jest-dom': 5.12.0
   '@types/jest': 26.0.22
   '@types/node': 14.14.41
@@ -542,7 +543,7 @@ packages:
       '@jest/console': 25.5.0
       '@jest/reporters': 25.4.0
       '@jest/test-result': 25.5.0
-      '@jest/transform': 25.4.0
+      '@jest/transform': 25.5.1
       '@jest/types': 25.5.0
       ansi-escapes: 4.3.2
       chalk: 3.0.0
@@ -557,7 +558,7 @@ packages:
       jest-resolve-dependencies: 25.5.4
       jest-runner: 25.5.4
       jest-runtime: 25.5.4
-      jest-snapshot: 25.4.0
+      jest-snapshot: 25.5.1
       jest-util: 25.5.0
       jest-validate: 25.5.0
       jest-watcher: 25.5.0
@@ -678,7 +679,7 @@ packages:
       '@bcoe/v8-coverage': 0.2.3
       '@jest/console': 25.5.0
       '@jest/test-result': 25.5.0
-      '@jest/transform': 25.4.0
+      '@jest/transform': 25.5.1
       '@jest/types': 25.5.0
       chalk: 3.0.0
       collect-v8-coverage: 1.0.1
@@ -1100,10 +1101,11 @@ packages:
       node: '>=10.13.0'
     resolution:
       integrity: sha512-J4x2zUF7kUhwzvvcXqfK/UTtsdivYYnIAGKxLVamDStGXmb1Fcg7U4I64BW6TlU8PKodDZygSncuQmKNoz4/LQ==
-  /@rushstack/heft-web-rig/0.2.22:
+  /@rushstack/heft-web-rig/0.2.22_@rushstack+heft@0.29.1:
     dependencies:
       '@microsoft/api-extractor': 7.14.0
-      '@rushstack/heft-webpack4-plugin': 0.1.8
+      '@rushstack/heft': 0.29.1
+      '@rushstack/heft-webpack4-plugin': 0.1.8_@rushstack+heft@0.29.1
       eslint: 7.12.1
       typescript: 3.9.9
     dev: false
@@ -1111,8 +1113,9 @@ packages:
       '@rushstack/heft': ^0.29.1
     resolution:
       integrity: sha512-qwkQs1bOjsR91Xisy4PKjZn8ATpDFE/qnAi8LH/1QMrklFMRLCrU/XUFXcfIsCSTg7riA2luF9AECWAfOfkMtg==
-  /@rushstack/heft-webpack4-plugin/0.1.8:
+  /@rushstack/heft-webpack4-plugin/0.1.8_@rushstack+heft@0.29.1:
     dependencies:
+      '@rushstack/heft': 0.29.1
       '@rushstack/node-core-library': 3.36.2
       webpack: 4.44.2
       webpack-dev-server: 3.11.2_webpack@4.44.2
@@ -5735,7 +5738,7 @@ packages:
       integrity: sha512-llnc8vQgYcNqDrqRDXWwMr9i7rS5XFiCwvh6DTP7Jqa2mqpcCBBlpCbn+trkG0KNhPu/h8rzyBkriOtBstvWhw==
   /jest-message-util/25.5.0:
     dependencies:
-      '@babel/code-frame': 7.12.11
+      '@babel/code-frame': 7.12.13
       '@jest/types': 25.5.0
       '@types/stack-utils': 1.0.1
       chalk: 3.0.0
@@ -6011,7 +6014,7 @@ packages:
       integrity: sha512-S5wqyz0DXnNJPd/xfIzZ5Xnp1HrJWBczg8mMfMpN78OJ5eDxXyf+Ygld9wX1DnUWbIbhM1YDY95NjR4CBXkb2g==
   /jest-snapshot/25.4.0:
     dependencies:
-      '@babel/types': 7.8.3
+      '@babel/types': 7.13.17
       '@jest/types': 25.5.0
       '@types/prettier': 1.19.1
       chalk: 3.0.0
@@ -7192,7 +7195,7 @@ packages:
       cross-spawn: 7.0.3
       gaze: 1.1.3
       get-stdin: 4.0.1
-      glob: 7.0.6
+      glob: 7.1.6
       lodash: 4.17.21
       meow: 3.7.0
       mkdirp: 0.5.5
@@ -10417,7 +10420,8 @@ packages:
       integrity: sha512-DUOKC/IhbkdLKKiV89gw9DUauTV8U/8yJl1sjf6MtDmzevLKOF2duNJ495S3MFVjqZarr+qNGCPbkg4mu4PpLw==
   file:projects/components.tgz:
     dependencies:
-      '@rushstack/heft-web-rig': 0.2.22
+      '@rushstack/heft': 0.29.1
+      '@rushstack/heft-web-rig': 0.2.22_@rushstack+heft@0.29.1
       '@types/node': 14.14.41
       '@types/react': 17.0.3
       '@types/react-dom': 17.0.3
@@ -10429,7 +10433,7 @@ packages:
     dev: false
     name: '@rush-temp/components'
     resolution:
-      integrity: sha512-ZUqE/sZsubl46LK5eio+60SRh94fRiZwSP1qmJVlAa+7xO8uFgPvdyQzWb7VvNefogCpmB1TtALoug/+OYa1rw==
+      integrity: sha512-gEmABsp9wLuMYeMBuvt5F7xzDBvXVCvPDcG9E/dh2zLoQI+ponJEaVqwtdHZU2UruMOVHMD6KJy31fy/u2i0ew==
       tarball: file:projects/components.tgz
     version: 0.0.0
   file:projects/healthline.tgz:
@@ -10461,6 +10465,7 @@ specifiers:
   '@rush-temp/components': file:./projects/components.tgz
   '@rush-temp/healthline': file:./projects/healthline.tgz
   '@rushstack/eslint-config': ~2.3.4
+  '@rushstack/heft': ~0.29.1
   '@rushstack/heft-web-rig': ~0.2.22
   '@testing-library/jest-dom': ~5.12.0
   '@types/jest': ~26.0.22
