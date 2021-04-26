@@ -25,6 +25,6 @@ export function Hello({ name, enthusiasmLevel = 1, onIncrement, onDecrement }: I
 
 // helpers
 
-function getExclamationMarks(numChars: number) {
+function getExclamationMarks(numChars: number): string {
   return Array(numChars + 1).join('!');
 }
