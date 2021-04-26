@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "scripts": {
     "build": "next build",
-    "build:watch": "",
+    "build:watch": "next dev",
     "dev": "next dev",
     "lint": "eslint . --ext ts --ext tsx --ext js",
     "sort-deps": "prettier-package-json --list-different",
