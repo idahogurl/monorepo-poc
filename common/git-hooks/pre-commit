@@ -7,5 +7,4 @@
 # are committed. The command is defined in common/config/rush/command-line.json
 # and uses the "rush-prettier" autoinstaller.
 node common/scripts/install-run-rush.js prettier && 
-node common/scripts/install-run-rush.js sort-deps &&
-node common/scripts/install-run-rush.js test || exit $?
+node common/scripts/install-run-rush.js sort-deps || exit $?
