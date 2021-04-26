@@ -1,13 +1,13 @@
 import * as React from 'react';
 
-export interface HelloProps {
+export interface IHelloProps {
   name: string;
   enthusiasmLevel?: number;
   onIncrement?: () => void;
   onDecrement?: () => void;
 }
 
-export function Hello({ name, enthusiasmLevel = 1, onIncrement, onDecrement }: HelloProps) {
+export function Hello({ name, enthusiasmLevel = 1, onIncrement, onDecrement }: IHelloProps): JSX.Element {
   if (enthusiasmLevel <= 0) {
     throw new Error('You could be a little more enthusiastic. :D');
   }
