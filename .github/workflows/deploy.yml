@@ -8,8 +8,19 @@ jobs:
       - uses: amondnet/vercel-action@v20
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }} # Required
-          github-token: ${{ secrets.GITHUB_TOKEN }} #Optional 
+          github-token: ${{ secrets.GITHUB_TOKEN }} #Optional
           vercel-args: '--prod' #Optional
-          vercel-org-id: ${{ secrets.ORG_ID}}  #Required
-          vercel-project-id: ${{ secrets.PROJECT_ID}} #Required 
+          vercel-org-id: ${{ secrets.ORG_ID}} #Required
+          vercel-project-id: ${{ secrets.PROJECT_ID}} #Required
           working-directory: ./sub-directory
+# steps:
+#   - script: "node common/scripts/install-run-rush.js version --bump --version-policy NONE --bypass-policy --target-branch $(Build.SourceBranchName)"
+#     displayName: "Bump NPM package versions"
+#     env:
+#       ARTIFACTORY_USER: $(ARTIFACTORY_USER)
+#       ARTIFACTORY_TOKEN: $(ARTIFACTORY_TOKEN)
+#   - script: "node common/scripts/install-run-rush.js publish --apply --publish --include-all --target-branch $(Build.SourceBranchName) --add-commit-details"
+#     displayName: "Publish NPM packages"
+#     env:
+#       ARTIFACTORY_USER: $(ARTIFACTORY_USER)
+#       ARTIFACTORY_TOKEN: $(ARTIFACTORY_TOKEN)
