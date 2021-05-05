@@ -1,5 +1,5 @@
 dependencies:
-  '@rush-temp/components': file:projects/components.tgz
+  '@rush-temp/components-monorepo': file:projects/components-monorepo.tgz
   '@rush-temp/healthline': file:projects/healthline.tgz
   '@rushstack/eslint-config': 2.3.4_eslint@7.25.0+typescript@4.2.4
   '@rushstack/heft': 0.29.1
@@ -10447,7 +10447,7 @@ packages:
       commander: 2.20.3
     resolution:
       integrity: sha512-DUOKC/IhbkdLKKiV89gw9DUauTV8U/8yJl1sjf6MtDmzevLKOF2duNJ495S3MFVjqZarr+qNGCPbkg4mu4PpLw==
-  file:projects/components.tgz:
+  file:projects/components-monorepo.tgz:
     dependencies:
       '@rushstack/eslint-config': 2.3.4_eslint@7.25.0+typescript@4.2.4
       '@rushstack/heft': 0.29.1
@@ -10463,10 +10463,10 @@ packages:
       tslib: 2.2.0
       typescript: 4.2.4
     dev: false
-    name: '@rush-temp/components'
+    name: '@rush-temp/components-monorepo'
     resolution:
-      integrity: sha512-4be9mSBbZT+w7NVz0I0R2Xa3qxjxwO6cs1oLc8AWp2smv1z/dcN+/FTKV+Rs3tdTjWptbItvhP4RtwHrbBnf+g==
-      tarball: file:projects/components.tgz
+      integrity: sha512-w2AoHlZOq5O+goobm0DhV6soAdmckD5IppSj+oNDLEJvGbrf5k9u0qYVqPP0aRrD0YxeylS63b628uXmMGxI6Q==
+      tarball: file:projects/components-monorepo.tgz
     version: 0.0.0
   file:projects/healthline.tgz:
     dependencies:
@@ -10491,11 +10491,11 @@ packages:
     dev: false
     name: '@rush-temp/healthline'
     resolution:
-      integrity: sha512-0VfKw14/33Nyx45jJIVYLzMtruWbabgw+jnuB1bwUbdeT4D7Gyq5pKJcndcKBUZlFkykv0qzscK06/UjkyqtHw==
+      integrity: sha512-LT1C8UJfaOs7mPTSU2ZWcpt7epIOzZbK4NlHkRhZIJB9JxQgi/Jgv+YNghUa30LBeyKZsfu+ObiUVoPQ5nEjZQ==
       tarball: file:projects/healthline.tgz
     version: 0.0.0
 specifiers:
-  '@rush-temp/components': file:./projects/components.tgz
+  '@rush-temp/components-monorepo': file:./projects/components-monorepo.tgz
   '@rush-temp/healthline': file:./projects/healthline.tgz
   '@rushstack/eslint-config': ~2.3.4
   '@rushstack/heft': ~0.29.1
