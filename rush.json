@@ -388,7 +388,12 @@
     {
       "packageName": "@healthline/components-monorepo",
       "projectFolder": "libs/components",
-      "versionPolicyName": "MyRandomLibraries"
+      "shouldPublish": true
+    },
+    {
+      "packageName": "@healthline/nextjs-rig",
+      "projectFolder": "rigs/nextjs",
+      "shouldPublish": true
     }
     // {
     //   /**

@@ -1,0 +1,13 @@
+{
+  "name": "@healthline/nextjs-rig",
+  "version": "0.0.1",
+  "description": "A rig package for Next.js projects",
+  "scripts": {
+    "build": "",
+    "lint": "",
+    "sort-deps": "",
+    "test": ""
+  },
+  "author": "Rebecca Vest",
+  "license": "ISC"
+}
