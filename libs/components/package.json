@@ -3,10 +3,10 @@
   "description": "",
   "license": "ISC",
   "author": "Rebecca Vest",
-  "version": "1.0.0",
-  "main": "lib/index.js",
+  "version": "1.0.1",
+  "main": "lib-commonjs/index.js",
   "files": [
-    "lib"
+    "lib-commonjs"
   ],
   "scripts": {
     "build": "heft test --clean",
