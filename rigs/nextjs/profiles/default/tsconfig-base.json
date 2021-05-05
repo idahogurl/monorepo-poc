@@ -1,4 +1,5 @@
 {
+  "$schema": "http://json.schemastore.org/tsconfig",
   "compilerOptions": {
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
@@ -14,7 +15,5 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "types": ["jest", "node"]
-  },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+  }
 }
