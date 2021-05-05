@@ -2,6 +2,7 @@ dependencies:
   '@healthline/components-monorepo': 1.0.1
   '@rush-temp/components-monorepo': file:projects/components-monorepo.tgz
   '@rush-temp/healthline': file:projects/healthline.tgz
+  '@rush-temp/nextjs-rig': file:projects/nextjs-rig.tgz
   '@rushstack/eslint-config': 2.3.4_eslint@7.25.0+typescript@4.2.4
   '@rushstack/heft': 0.29.1
   '@rushstack/heft-web-rig': 0.2.22_@rushstack+heft@0.29.1
@@ -11,7 +12,6 @@ dependencies:
   '@types/node': 14.14.41
   '@types/react': 17.0.3
   '@types/react-dom': 17.0.3
-  babel-jest: 26.6.3
   eslint: 7.25.0
   jest: 26.6.3
   jest-standard-reporter: 2.0.0
@@ -10388,13 +10388,21 @@ packages:
     dev: false
     name: '@rush-temp/healthline'
     resolution:
-      integrity: sha512-aFOmTEsfVo2Bm/aLzg0XyEPUytFyF4+MEAXEXfjEDICjLgHBJXsx6ZEjrdk3FHTiGFc2y+DJxLjU87EQV4veIg==
+      integrity: sha512-7tl/DAmzz9hs2Vam3kNCYvbDMtXTkkH2x7JAgQjq3bbFTSIm9zJbNhuWsrELImbOfRbsy8aH/eJ7WPpup087uw==
       tarball: file:projects/healthline.tgz
+    version: 0.0.0
+  file:projects/nextjs-rig.tgz:
+    dev: false
+    name: '@rush-temp/nextjs-rig'
+    resolution:
+      integrity: sha512-bLAQ3Wj++DjjITqcjTuks2kwioaiRH/rOB0+ZiPKAgCQ2L0Fmd3DGFRJhg/aEHDINrtgUs6x1i3DhchzIMuvaA==
+      tarball: file:projects/nextjs-rig.tgz
     version: 0.0.0
 specifiers:
   '@healthline/components-monorepo': ~1.0.1
   '@rush-temp/components-monorepo': file:./projects/components-monorepo.tgz
   '@rush-temp/healthline': file:./projects/healthline.tgz
+  '@rush-temp/nextjs-rig': file:./projects/nextjs-rig.tgz
   '@rushstack/eslint-config': ~2.3.4
   '@rushstack/heft': ~0.29.1
   '@rushstack/heft-web-rig': ~0.2.22
@@ -10404,7 +10412,6 @@ specifiers:
   '@types/node': ~14.14.41
   '@types/react': ~17.0.3
   '@types/react-dom': ~17.0.3
-  babel-jest: ~26.6.3
   eslint: ~7.25.0
   jest: ~26.6.3
   jest-standard-reporter: ~2.0.0
