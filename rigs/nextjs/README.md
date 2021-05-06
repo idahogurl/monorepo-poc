@@ -11,6 +11,8 @@ To enable it, add a `tsconfig.json` and `jest.config.json` file to your project,
 ```js
 {
   "extends": "./node_modules/@healthline/nextjs-rig/profiles/default/tsconfig-base.json",
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
 }
 ```
 

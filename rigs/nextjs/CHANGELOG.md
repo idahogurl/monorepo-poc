@@ -1,9 +1,11 @@
 # Change Log - @healthline/nextjs-rig
 
-This log was last generated on Wed, 05 May 2021 20:47:27 GMT and should not be manually modified.
+This log was last generated on Thu, 06 May 2021 00:01:15 GMT and should not be manually modified.
 
-## 0.0.1
-Wed, 05 May 2021 20:47:27 GMT
+## 1.0.0
+Thu, 06 May 2021 00:01:15 GMT
 
-_Initial release_
+### Breaking changes
+
+- Removed: `include` and `exclude` paths from base tsconfig
 

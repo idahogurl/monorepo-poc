@@ -2,10 +2,16 @@
   "name": "@healthline/nextjs-rig",
   "entries": [
     {
-      "version": "0.0.1",
-      "tag": "@healthline/nextjs-rig_v0.0.1",
-      "date": "Wed, 05 May 2021 20:47:27 GMT",
-      "comments": {}
+      "version": "1.0.0",
+      "tag": "@healthline/nextjs-rig_v1.0.0",
+      "date": "Thu, 06 May 2021 00:01:15 GMT",
+      "comments": {
+        "major": [
+          {
+            "comment": "Removed: `include` and `exclude` paths from base tsconfig"
+          }
+        ]
+      }
     }
   ]
 }

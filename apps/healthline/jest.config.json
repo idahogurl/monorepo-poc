@@ -1,0 +1,3 @@
+{
+  "preset": "./node_modules/@healthline/nextjs-rig/jest-shared.config.js"
+}
