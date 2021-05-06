@@ -18,7 +18,7 @@
     "react-dom": "~17.0.2"
   },
   "devDependencies": {
-    "@healthline/nextjs-rig": "~0.0.1",
+    "@healthline/nextjs-rig": "~1.0.0",
     "@rushstack/eslint-config": "~2.3.4",
     "@testing-library/jest-dom": "~5.12.0",
     "@types/jest": "~26.0.22",

@@ -1,6 +1,6 @@
 {
   "name": "@healthline/nextjs-rig",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A rig package for Next.js projects",
   "scripts": {
     "build": "",
