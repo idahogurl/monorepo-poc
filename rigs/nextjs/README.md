@@ -10,6 +10,7 @@ To enable it,
 2) Add or modify the `tsconfig.json` file in the root of your project to only contain the following:
 
 **tsconfig.json**
+```js
 {
   "extends": "./node_modules/@healthline/nextjs-rig/profiles/default/tsconfig-base.json",
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
