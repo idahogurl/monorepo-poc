@@ -29,4 +29,4 @@ To enable it,
 
 ## Links
 
-[CHANGELOG.md](https://github.com/healthline/monorepo-poc/CHANGELOG.md) - Find out what's new in the latest version
+[CHANGELOG.md](https://github.com/healthline/monorepo-poc/blob/master/rigs/nextjs/CHANGELOG.md) - Find out what's new in the latest version
