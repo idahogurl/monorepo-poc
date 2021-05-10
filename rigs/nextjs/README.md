@@ -5,7 +5,9 @@ A rig package for Next.js. To learn more about rig packages, consult the [@rushs
 
 This rig is not a complete Heft rig package. Next.js has it's own build system which removes the necessity of Heft. It only contains config files for TypeScript and Jest. 
 
-To enable it, add a `tsconfig.json` and `jest.config.json` file to your project, as shown below:
+To enable it, 
+1) Install rig package inside Rush project that uses `Next.js`. `rush add -p @healthline/nextjs-rig --dev` 
+2) Modify the `tsconfig.json` file in your project to only contain the following:
 
 **tsconfig.json**
 ```js
@@ -13,6 +15,8 @@ To enable it, add a `tsconfig.json` and `jest.config.json` file to your project,
   "extends": "./node_modules/@healthline/nextjs-rig/profiles/default/tsconfig-base.json",
 }
 ```
+
+3) Add `jest.config.json` file in the root of your project containing the following:
 
 **jest.config.json**
 ```js
