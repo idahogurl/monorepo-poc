@@ -7,12 +7,13 @@ This rig is not a complete Heft rig package. Next.js has it's own build system w
 
 To enable it, 
 1) Install rig package inside Rush project that uses `Next.js`. `rush add -p @healthline/nextjs-rig --dev` 
-2) Modify the `tsconfig.json` file in your project to only contain the following:
+2) Add or modify the `tsconfig.json` file in the root of your project to only contain the following:
 
 **tsconfig.json**
-```js
 {
   "extends": "./node_modules/@healthline/nextjs-rig/profiles/default/tsconfig-base.json",
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
 }
 ```
 
