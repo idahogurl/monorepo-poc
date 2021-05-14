@@ -385,6 +385,10 @@
       "projectFolder": "apps/hl"
     },
     {
+      "packageName": "mnt",
+      "projectFolder": "apps/mnt"
+    },
+    {
       "packageName": "@healthline/components",
       "projectFolder": "libs/components"
     }

@@ -2,8 +2,9 @@ dependencies:
   '@babel/core': 7.14.2
   '@babel/preset-env': 7.14.2_@babel+core@7.14.2
   '@babel/preset-react': 7.13.13_@babel+core@7.14.2
+  '@rush-temp/article': file:projects/article.tgz
   '@rush-temp/components': file:projects/components.tgz
-  '@rush-temp/hl': file:projects/hl.tgz
+  '@rush-temp/program-landing': file:projects/program-landing.tgz
   '@rushstack/heft': 0.30.4
   '@rushstack/heft-webpack5-plugin': 0.1.13_@rushstack+heft@0.30.4
   '@storybook/addon-actions': 6.2.9_react-dom@17.0.2+react@17.0.2
@@ -15181,6 +15182,21 @@ packages:
     dev: false
     resolution:
       integrity: sha512-V50KMwwzqJV0NpZIZFwfOD5/lyny3WlSzRiXgA0G7VUnRlqttta1L6UQIHzd6EuBY/cHGfwTIck7w1yH6Q5zUw==
+  file:projects/article.tgz:
+    dependencies:
+      eslint: 7.26.0
+      eslint-plugin-react: 7.23.2_eslint@7.26.0
+      jest: 26.6.3
+      next: 10.2.0_react-dom@17.0.2+react@17.0.2
+      prettier-package-json: 2.5.0
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+    dev: false
+    name: '@rush-temp/article'
+    resolution:
+      integrity: sha512-cHMLiGxt2WyRBVIJIx1muNcwclpU8S2io53HF38CtKkzd357rfpxsG+atFhrNDooMR90FUwOM5usOPU/U+i4mQ==
+      tarball: file:projects/article.tgz
+    version: 0.0.0
   file:projects/components.tgz:
     dependencies:
       '@babel/core': 7.14.2
@@ -15207,29 +15223,24 @@ packages:
       integrity: sha512-rQLkJyejehJAdX6i9FNMy2CbsKDK9etT2bC+852NYxQ0SV1hglxs3yk4toS2Ct3Z2BvjbQBUU9CNtI5G8WavdA==
       tarball: file:projects/components.tgz
     version: 0.0.0
-  file:projects/hl.tgz:
+  file:projects/program-landing.tgz:
     dependencies:
-      '@babel/core': 7.14.2
-      '@rushstack/eslint-config': 2.3.4_eslint@7.26.0
-      eslint: 7.26.0
-      eslint-plugin-react: 7.23.2_eslint@7.26.0
-      jest: 26.6.3
       next: 10.2.0_react-dom@17.0.2+react@17.0.2
-      prettier-package-json: 2.5.0
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
     dev: false
-    name: '@rush-temp/hl'
+    name: '@rush-temp/program-landing'
     resolution:
-      integrity: sha512-GZxPiXIGGhvzgGgh+JgbhGIRvcs6bwevcaqN9UBQWizIm0itLZaeXTKFSwE9JEJOgk37iX8YhrJQvDpMIMnxAA==
-      tarball: file:projects/hl.tgz
+      integrity: sha512-QbQZzTFDMcE9xn/G/RKOE2JzO2GPVBgzIJpzGQlVuKFExoFsgU7vzvzowAxHvfoQ8WLXQPsIM2KodqXaaCnZ5Q==
+      tarball: file:projects/program-landing.tgz
     version: 0.0.0
 specifiers:
   '@babel/core': ~7.14.2
   '@babel/preset-env': ~7.14.2
   '@babel/preset-react': ~7.13.13
+  '@rush-temp/article': file:./projects/article.tgz
   '@rush-temp/components': file:./projects/components.tgz
-  '@rush-temp/hl': file:./projects/hl.tgz
+  '@rush-temp/program-landing': file:./projects/program-landing.tgz
   '@rushstack/heft': ~0.30.4
   '@rushstack/heft-webpack5-plugin': ~0.1.13
   '@storybook/addon-actions': ^6.2.9
