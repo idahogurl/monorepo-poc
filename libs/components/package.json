@@ -7,7 +7,7 @@
     "build": "heft test --clean",
     "build:watch": "heft build",
     "lint": "",
-    "sort-deps": "prettier-package-json ./package.json --list-different",
+    "sort-deps": "prettier-package-json --write ./package.json",
     "test": "heft test"
   },
   "author": "Rebecca Vest",
