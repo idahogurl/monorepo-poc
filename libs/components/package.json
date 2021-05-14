@@ -7,9 +7,11 @@
   "main": "dist/main.js",
   "scripts": {
     "build": "heft test --clean",
+    "build-storybook": "build-storybook",
     "build:watch": "heft build",
     "lint": "eslint . --ignore-path ../../.gitignore",
     "sort-deps": "prettier-package-json --write ./package.json",
+    "storybook": "start-storybook -p 6006",
     "test": "heft test"
   },
   "dependencies": {
@@ -22,6 +24,10 @@
     "@babel/preset-react": "~7.13.13",
     "@rushstack/heft": "~0.30.4",
     "@rushstack/heft-webpack5-plugin": "~0.1.13",
+    "@storybook/addon-actions": "^6.2.9",
+    "@storybook/addon-essentials": "^6.2.9",
+    "@storybook/addon-links": "^6.2.9",
+    "@storybook/react": "^6.2.9",
     "babel-loader": "~8.2.2",
     "eslint": "~7.26.0",
     "eslint-plugin-react": "~7.23.2",
