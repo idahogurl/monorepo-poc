@@ -1,5 +1,0 @@
-{
-  "extends": "./node_modules/@healthline/nextjs-rig/profiles/default/tsconfig-base.json",
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
-}

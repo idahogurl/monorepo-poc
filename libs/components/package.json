@@ -1,13 +1,8 @@
 {
-  "name": "@healthline/components-monorepo",
+  "name": "@healthline/components",
+  "version": "1.0.0",
   "description": "",
-  "license": "ISC",
-  "author": "Rebecca Vest",
-  "version": "1.0.1",
-  "main": "lib-commonjs/index.js",
-  "files": [
-    "lib-commonjs"
-  ],
+  "main": "dist/main.js",
   "scripts": {
     "build": "heft test --clean",
     "build:watch": "heft build",
@@ -15,22 +10,20 @@
     "sort-deps": "prettier-package-json ./package.json --list-different",
     "test": "heft test"
   },
-  "typings": "lib/index.d.ts",
+  "author": "Rebecca Vest",
+  "license": "ISC",
   "dependencies": {
-    "react": "~17.0.2",
-    "react-dom": "~17.0.2"
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
   },
   "devDependencies": {
-    "@rushstack/eslint-config": "~2.3.4",
-    "@rushstack/heft": "~0.29.1",
-    "@rushstack/heft-web-rig": "~0.2.22",
-    "@types/heft-jest": "1.0.2",
-    "@types/node": "~14.14.41",
-    "@types/react": "~17.0.3",
-    "@types/react-dom": "~17.0.3",
-    "eslint": "~7.25.0",
-    "prettier-package-json": "~2.1.3",
-    "tslib": "~2.2.0",
-    "typescript": "~4.2.4"
+    "@rushstack/heft-webpack5-plugin": "~0.1.13",
+    "@rushstack/heft": "~0.30.4",
+    "babel-loader": "~8.2.2",
+    "@babel/preset-env": "~7.14.2",
+    "@babel/preset-react": "~7.13.13",
+    "@babel/core": "~7.14.2",
+    "jest": "~26.6.3",
+    "prettier-package-json": "~2.5.0"
   }
 }
