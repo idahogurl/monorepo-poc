@@ -1,23 +1,25 @@
 {
+  "private": true,
   "name": "hl",
   "version": "0.1.0",
-  "private": true,
   "scripts": {
     "build": "next build",
     "build:watch": "",
     "dev": "next dev",
-    "lint": "eslint .",
+    "lint": "eslint . --ignore-path ../../.gitignore",
     "sort-deps": "prettier-package-json --write ./package.json",
     "start": "next start",
     "test": "jest"
   },
   "dependencies": {
+    "@healthline/components": "~1.0.0",
     "next": "10.2.0",
     "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "@healthline/components": "~1.0.0"
+    "react-dom": "17.0.2"
   },
   "devDependencies": {
+    "eslint": "~7.26.0",
+    "eslint-plugin-react": "~7.23.2",
     "jest": "~26.6.3",
     "prettier-package-json": "~2.5.0"
   }

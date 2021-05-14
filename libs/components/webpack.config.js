@@ -1,6 +1,5 @@
+/* eslint-env node */
 'use strict';
-
-const path = require('path');
 
 /**
  * If the "--production" command-line parameter is specified when invoking Heft, then the

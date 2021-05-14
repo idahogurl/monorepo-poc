@@ -1,10 +1,21 @@
-// This is a workaround for https://github.com/eslint/eslint/issues/3458
-require('@rushstack/eslint-config/patch/modern-module-resolution');
-
+/* eslint-env node */
 module.exports = {
-  extends: ['@rushstack/eslint-config/profile/web-app', '@rushstack/eslint-config/mixins/react'],
-  parserOptions: { tsconfigRootDir: __dirname },
-
+  env: {
+    browser: true,
+    es2021: true
+  },
+  extends: ['eslint:recommended', 'plugin:react/recommended'],
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true
+    },
+    ecmaVersion: 12,
+    sourceType: 'module'
+  },
+  plugins: ['react'],
+  rules: {
+    'react/prop-types': 0
+  },
   settings: {
     react: {
       version: '17.0.2'
