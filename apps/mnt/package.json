@@ -4,7 +4,6 @@
   "version": "0.1.0",
   "scripts": {
     "build": "next build",
-    "build:watch": "",
     "dev": "next dev -p 3001",
     "lint": "eslint . --ignore-path ../../.gitignore",
     "sort-deps": "prettier-package-json --write ./package.json",

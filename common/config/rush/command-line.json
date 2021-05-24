@@ -12,16 +12,10 @@
    */
   "commands": [
     {
-      "name": "build:watch",
-      "commandKind": "bulk",
-      "summary": "Build projects and watch for changes",
-      "description": "For details, see the article \"Using watch mode\" on the Rush website: https://rushjs.io/",
-
-      // use incremental build logic (important)
-      "incremental": true,
-      "enableParallelism": true,
-      // Enable "watch mode"
-      "watchForChanges": true
+      "name": "select",
+      "commandKind": "global",
+      "summary": "This command invokes a simple prompt to run multiple rush projects in one terminal.",
+      "shellCommand": "rush-select"
     },
     {
       "name": "prettier",
