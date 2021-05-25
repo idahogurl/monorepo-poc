@@ -1,22 +1,4 @@
 /* eslint-env node */
 module.exports = {
-  env: {
-    browser: true,
-    es2021: true
-  },
-  extends: ['eslint:recommended', 'plugin:react/recommended'],
-  parserOptions: {
-    ecmaFeatures: {
-      jsx: true
-    },
-    ecmaVersion: 12,
-    sourceType: 'module'
-  },
-  plugins: ['react'],
-  rules: {},
-  settings: {
-    react: {
-      version: '17.0.2'
-    }
-  }
+  extends: '@healthline/eslint-config/profiles/web'
 };

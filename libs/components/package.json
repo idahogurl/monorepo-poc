@@ -6,13 +6,13 @@
   "author": "Rebecca Vest",
   "main": "dist/main.js",
   "scripts": {
-    "build": "heft test --clean",
+    "build": "webpack --mode production",
     "build-storybook": "build-storybook",
-    "build:watch": "heft build",
+    "dev": "webpack --watch",
     "lint": "eslint . --ignore-path ../../.gitignore",
     "sort-deps": "prettier-package-json --write ./package.json",
     "storybook": "start-storybook -p 6006",
-    "test": "heft test"
+    "test": "jest"
   },
   "dependencies": {
     "react": "17.0.2",
@@ -22,16 +22,18 @@
     "@babel/core": "~7.14.2",
     "@babel/preset-env": "~7.14.2",
     "@babel/preset-react": "~7.13.13",
-    "@rushstack/heft": "~0.30.4",
-    "@rushstack/heft-webpack5-plugin": "~0.1.13",
+    "@healthline/eslint-config": "~0.0.1",
     "@storybook/addon-actions": "^6.2.9",
     "@storybook/addon-essentials": "^6.2.9",
     "@storybook/addon-links": "^6.2.9",
     "@storybook/react": "^6.2.9",
     "babel-loader": "~8.2.2",
     "eslint": "~7.26.0",
+    "eslint-plugin-jest": "~24.3.6",
     "eslint-plugin-react": "~7.23.2",
     "jest": "~26.6.3",
-    "prettier-package-json": "~2.5.0"
+    "prettier-package-json": "~2.5.0",
+    "webpack": "~5.37.1",
+    "webpack-cli": "~4.7.0"
   }
 }

@@ -391,6 +391,10 @@
     {
       "packageName": "@healthline/components",
       "projectFolder": "libs/components"
+    },
+    {
+      "packageName": "@healthline/eslint-config",
+      "projectFolder": "libs/eslint-config"
     }
     // {
     //   /**
