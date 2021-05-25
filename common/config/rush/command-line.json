@@ -12,12 +12,6 @@
    */
   "commands": [
     {
-      "name": "select",
-      "commandKind": "global",
-      "summary": "This command invokes a simple prompt to run multiple rush projects in one terminal.",
-      "shellCommand": "rush-select"
-    },
-    {
       "name": "prettier",
       "commandKind": "global",
       "summary": "Used by the pre-commit Git hook. This command invokes Prettier to reformat staged changes.",
