@@ -80,7 +80,6 @@ common/autoinstallers/*/.npmrc
 # vercel
 .vercel
 
-.heft
 dist
 
 #-------------------------------------------------------------------------------------------------------------------
@@ -104,5 +103,3 @@ dist
 
 # Prettier reformats code blocks inside Markdown, which affects rendered output
 *.md
-
-.heft
