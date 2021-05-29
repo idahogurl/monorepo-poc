@@ -6,7 +6,7 @@
     "build": "next build",
     "dev": "next dev -p 3001",
     "lint": "eslint . --ignore-path ../../.gitignore",
-    "sort-deps": "prettier-package-json --write ./package.json",
+    "lint-staged": "lint-staged",
     "start": "next start",
     "test": "jest"
   },
@@ -19,8 +19,24 @@
   "devDependencies": {
     "@healthline/eslint-config": "~0.0.1",
     "eslint": "~7.26.0",
+    "eslint-plugin-jest": "~24.3.6",
     "eslint-plugin-react": "~7.23.2",
     "jest": "~26.6.3",
-    "prettier-package-json": "~2.5.0"
+    "lint-staged": "~11.0.0",
+    "prettier": "^2.3.0",
+    "prettier-package-json": "~2.5.0",
+    "pretty-quick": "^3.1.0"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint . --ignore-path ../../.gitignore --fix",
+      "pretty-quick --write",
+      "git add .",
+      "jest --bail --findRelatedTests"
+    ],
+    "package.json": [
+      "prettier-package-json --write ./package.json",
+      "git add ."
+    ]
   }
 }

@@ -12,25 +12,15 @@
    */
   "commands": [
     {
-      "name": "prettier",
-      "commandKind": "global",
-      "summary": "Used by the pre-commit Git hook. This command invokes Prettier to reformat staged changes.",
-
-      "autoinstallerName": "rush-prettier",
-
-      // This will invoke common/autoinstallers/rush-prettier/node_modules/.bin/pretty-quick
-      "shellCommand": "pretty-quick --staged"
-    },
-    {
-      "name": "sort-deps",
+      "name": "lint-staged",
       "commandKind": "bulk",
-      "summary": "Used by the pre-commit Git hook. This command sorts dependencies in package.json.",
+      "summary": "Used by the pre-commit Git hook. This command lints staged project files.",
       "enableParallelism": true
     },
     {
       "name": "lint",
       "commandKind": "bulk",
-      "summary": "Used by the pre-commit Git hook. This command lints project.",
+      "summary": "Used by the pre-commit Git hook. This command lints all project files.",
       "enableParallelism": true
     },
     {
