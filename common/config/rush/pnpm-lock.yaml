@@ -3,10 +3,9 @@ dependencies:
   '@babel/preset-env': 7.14.2_@babel+core@7.14.2
   '@babel/preset-react': 7.13.13_@babel+core@7.14.2
   '@rush-temp/components': file:projects/components.tgz
+  '@rush-temp/eslint-config': file:projects/eslint-config.tgz
   '@rush-temp/hl': file:projects/hl.tgz_webpack@5.37.1
   '@rush-temp/mnt': file:projects/mnt.tgz_webpack@5.37.1
-  '@rushstack/heft': 0.30.4
-  '@rushstack/heft-webpack5-plugin': 0.1.13_e95387d6c4ae62adbdf00d712afdf2e6
   '@storybook/addon-actions': 6.2.9_react-dom@17.0.2+react@17.0.2
   '@storybook/addon-essentials': 6.2.9_70bd11b3028e8abfb805427b007fbe50
   '@storybook/addon-links': 6.2.9_react-dom@17.0.2+react@17.0.2
@@ -6769,7 +6768,7 @@ packages:
       '@babel/code-frame': 7.12.11
       '@eslint/eslintrc': 0.4.1
       ajv: 6.12.6
-      chalk: 4.0.0
+      chalk: 4.1.1
       cross-spawn: 7.0.3
       debug: 4.3.1
       doctrine: 3.0.0
@@ -15497,8 +15496,20 @@ packages:
     dev: false
     name: '@rush-temp/components'
     resolution:
-      integrity: sha512-qBfsRNbLHuKDQ/kqaooouOkexm8AsnTP9adfLas/V/kC5R5pSk5og3M21DG7jdPzMSfKex+q//hea8mYUrjvUA==
+      integrity: sha512-BDTxgU8hUsdXTFLKo4T3EPkc7v+QZmWFrgizS95CQXTPWNx7TTLTuTJr2WtrxbHrydLOFV6aqOh0w4ld/4JUKg==
       tarball: file:projects/components.tgz
+    version: 0.0.0
+  file:projects/eslint-config.tgz:
+    dependencies:
+      eslint: 7.26.0
+      eslint-plugin-jest: 24.3.6_eslint@7.26.0
+      eslint-plugin-react: 7.23.2_eslint@7.26.0
+      prettier-package-json: 2.5.0
+    dev: false
+    name: '@rush-temp/eslint-config'
+    resolution:
+      integrity: sha512-JBjC4PGGu5Xg2XrR/gGtc7RfUuUJ6uaDU3ibiMn3IJbzyPp9DjAzQyrFgvFxpm7y5cfvBoPKnjOa/WEF7FyewA==
+      tarball: file:projects/eslint-config.tgz
     version: 0.0.0
   file:projects/hl.tgz_webpack@5.37.1:
     dependencies:
@@ -15541,10 +15552,9 @@ specifiers:
   '@babel/preset-env': ~7.14.2
   '@babel/preset-react': ~7.13.13
   '@rush-temp/components': file:./projects/components.tgz
+  '@rush-temp/eslint-config': file:./projects/eslint-config.tgz
   '@rush-temp/hl': file:./projects/hl.tgz
   '@rush-temp/mnt': file:./projects/mnt.tgz
-  '@rushstack/heft': ~0.30.4
-  '@rushstack/heft-webpack5-plugin': ~0.1.13
   '@storybook/addon-actions': ^6.2.9
   '@storybook/addon-essentials': ^6.2.9
   '@storybook/addon-links': ^6.2.9

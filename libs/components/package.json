@@ -22,6 +22,7 @@
     "@babel/core": "~7.14.2",
     "@babel/preset-env": "~7.14.2",
     "@babel/preset-react": "~7.13.13",
+    "@healthline/eslint-config": "~0.0.1",
     "@storybook/addon-actions": "^6.2.9",
     "@storybook/addon-essentials": "^6.2.9",
     "@storybook/addon-links": "^6.2.9",
