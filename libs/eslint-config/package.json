@@ -8,6 +8,7 @@
   "scripts": {
     "build": "",
     "lint": "",
+    "lint-staged": "",
     "sort-deps": "prettier-package-json --write ./package.json",
     "start": "",
     "test": "echo \"Error: no test specified\" && exit 1"

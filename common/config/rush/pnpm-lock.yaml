@@ -15,8 +15,11 @@ dependencies:
   eslint-plugin-jest: 24.3.6_eslint@7.26.0
   eslint-plugin-react: 7.23.2_eslint@7.26.0
   jest: 26.6.3
+  lint-staged: 11.0.0
   next: 10.2.0_aacd4ffc5347d1736b1d0e3d6655123b
+  prettier: 2.3.0
   prettier-package-json: 2.5.0
+  pretty-quick: 3.1.0_prettier@2.3.0
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
   webpack: 5.37.1_webpack-cli@4.7.0
@@ -4202,6 +4205,12 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-45sJrqne+Gao8gbiiK9jkZuuOcQ=
+  /array-differ/3.0.0:
+    dev: false
+    engines:
+      node: '>=8'
+    resolution:
+      integrity: sha512-THtfYS6KtME/yIAhKjZ2ul7XI96lQGHRputJQHO80LAWQnuGP4iCIN8vdMRboGbIEYBwU33q8Tch1os2+X0kMg==
   /array-equal/1.0.0:
     dev: false
     resolution:
@@ -5389,6 +5398,14 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-y4coMcylgSCdVinjiDBuR8PCC2bLjyGTwEmPb9NHR/QaNU6EUOXcTY/s6VjGMD6ENSEaeQYHCY0GNGS5jfMwPw==
+  /cli-cursor/3.1.0:
+    dependencies:
+      restore-cursor: 3.1.0
+    dev: false
+    engines:
+      node: '>=8'
+    resolution:
+      integrity: sha512-I/zHAwsKf9FqGoXM4WWRACob9+SNukZTd94DWF57E4toouRulbCxcUh6RKUEOQlYTHJnzkPMySvPNaaSLNfLZw==
   /cli-table3/0.6.0:
     dependencies:
       object-assign: 4.1.1
@@ -5400,6 +5417,15 @@ packages:
       colors: 1.2.5
     resolution:
       integrity: sha512-gnB85c3MGC7Nm9I/FkiasNBOKjOiO1RNuXXarQms37q4QMpWdlbBgD/VnOStA2faG1dpXMv31RFApjX1/QdgWQ==
+  /cli-truncate/2.1.0:
+    dependencies:
+      slice-ansi: 3.0.0
+      string-width: 4.2.2
+    dev: false
+    engines:
+      node: '>=8'
+    resolution:
+      integrity: sha512-n8fOixwDD6b/ObinzTrp1ZKFzbgvKZvuz/TvejnLn1aQfC6r52XEx85FmuC+3HI+JM7coBRXUvNqEU2PHVrHpg==
   /clipboard/2.0.8:
     dependencies:
       good-listener: 1.2.2
@@ -7629,6 +7655,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-/pViTfifW+gBbh/RnlFYHINvELT9Znt+SYyDKAUL6uV6By019AK/s+i9XP4jSwq7lwP38Fd8HVeTxym3+hkwmQ==
+  /get-own-enumerable-property-symbols/3.0.2:
+    dev: false
+    resolution:
+      integrity: sha512-I0UBV/XOz1XkIJHEUDMZAbzCThU/H8DxmSfmdGcKPnVhu2VfFqr34jr9777IyaTYvxjedWhqVIilEDsCdP5G6g==
   /get-package-type/0.1.0:
     dev: false
     engines:
@@ -8772,6 +8802,12 @@ packages:
       node: '>=0.12.0'
     resolution:
       integrity: sha512-41Cifkg6e8TylSpdtTpeLVMqvSBEVzTttHvERD741+pnZ8ANv0004MRL43QKPDlK9cGvNp6NZWZUBlbGXYxxng==
+  /is-obj/1.0.1:
+    dev: false
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha1-PkcprB9f3gJc19g6iW2rn09n2w8=
   /is-object/1.0.2:
     dev: false
     resolution:
@@ -8831,6 +8867,12 @@ packages:
       node: '>= 0.4'
     resolution:
       integrity: sha512-qSVXFz28HM7y+IWX6vLCsexdlvzT1PJNFSBuaQLQ5o0IEw8UDYW6/2+eCMVyIsbM8CNLX2a/QWmSpyxYEHY7CQ==
+  /is-regexp/1.0.0:
+    dev: false
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha1-/S2INUXEa6xaYz57mgnof6LLUGk=
   /is-root/2.1.0:
     dev: false
     engines:
@@ -8883,6 +8925,12 @@ packages:
     dev: false
     resolution:
       integrity: sha1-5HnICFjfDBsR3dppQPlgEfzaSpo=
+  /is-unicode-supported/0.1.0:
+    dev: false
+    engines:
+      node: '>=10'
+    resolution:
+      integrity: sha512-knxG2q4UC3u8stRGyAVJCOdxFmv5DZiRcdlIaAQXAbSfJya+OhopNotLQrstBhququ4ZpuKbDc/8S6mgXgPFPw==
   /is-utf8/0.2.1:
     dev: false
     resolution:
@@ -10138,6 +10186,44 @@ packages:
     dev: false
     resolution:
       integrity: sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=
+  /lint-staged/11.0.0:
+    dependencies:
+      chalk: 4.1.1
+      cli-truncate: 2.1.0
+      commander: 7.2.0
+      cosmiconfig: 7.0.0
+      debug: 4.3.1
+      dedent: 0.7.0
+      enquirer: 2.3.6
+      execa: 5.0.0
+      listr2: 3.9.0_enquirer@2.3.6
+      log-symbols: 4.1.0
+      micromatch: 4.0.4
+      normalize-path: 3.0.0
+      please-upgrade-node: 3.2.0
+      string-argv: 0.3.1
+      stringify-object: 3.3.0
+    dev: false
+    hasBin: true
+    resolution:
+      integrity: sha512-3rsRIoyaE8IphSUtO1RVTFl1e0SLBtxxUOPBtHxQgBHS5/i6nqvjcUfNioMa4BU9yGnPzbO+xkfLtXtxBpCzjw==
+  /listr2/3.9.0_enquirer@2.3.6:
+    dependencies:
+      cli-truncate: 2.1.0
+      colorette: 1.2.2
+      enquirer: 2.3.6
+      log-update: 4.0.0
+      p-map: 4.0.0
+      rxjs: 6.6.7
+      through: 2.3.8
+      wrap-ansi: 7.0.0
+    dev: false
+    engines:
+      node: '>=10.0.0'
+    peerDependencies:
+      enquirer: '>= 2.3.0 < 3'
+    resolution:
+      integrity: sha512-+JxQt7Vi4WEWgJsxmOEX9lDbCumrb3mrEYIeE1VI7I4lf2rXE4v9pq3RMVNp+a9s6mCgc/IsF0ppHsLrx2BEAw==
   /load-json-file/1.1.0:
     dependencies:
       graceful-fs: 4.2.6
@@ -10253,6 +10339,26 @@ packages:
     dev: false
     resolution:
       integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
+  /log-symbols/4.1.0:
+    dependencies:
+      chalk: 4.1.1
+      is-unicode-supported: 0.1.0
+    dev: false
+    engines:
+      node: '>=10'
+    resolution:
+      integrity: sha512-8XPvpAA8uyhfteu8pIvQxpJZ7SYYdpUivZpGy6sFsBuKRY/7rQGavedeB8aK+Zkyq6upMFVL/9AW6vOYzfRyLg==
+  /log-update/4.0.0:
+    dependencies:
+      ansi-escapes: 4.3.2
+      cli-cursor: 3.1.0
+      slice-ansi: 4.0.0
+      wrap-ansi: 6.2.0
+    dev: false
+    engines:
+      node: '>=10'
+    resolution:
+      integrity: sha512-9fkkDevMefjg0mmzWFBW8YkFP91OrizzkW3diF7CpG+S2EYdy4+TVfGwz1zeF8x7hCx1ovSPTOE9Ngib74qqUg==
   /loglevel/1.7.1:
     dev: false
     engines:
@@ -10692,6 +10798,12 @@ packages:
     dev: false
     resolution:
       integrity: sha1-viwAX9oy4LKa8fBdfEszIUxwH5I=
+  /mri/1.1.6:
+    dev: false
+    engines:
+      node: '>=4'
+    resolution:
+      integrity: sha512-oi1b3MfbyGa7FJMP9GmLTttni5JoICpYBRlq+x5V16fZbLsnL9N3wFqqIm/nIG43FjUFkFh9Epzp/kzUGUnJxQ==
   /ms/2.0.0:
     dev: false
     resolution:
@@ -10716,6 +10828,18 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-ji6J5enbMyGRHIAkAOu3WdV8nggqviKCEKtXcOqfphZZtQrmHKycfynJ2V7eVPUA4NhJ6V7Wf4TmGbTwKE9B6g==
+  /multimatch/4.0.0:
+    dependencies:
+      '@types/minimatch': 3.0.4
+      array-differ: 3.0.0
+      array-union: 2.1.0
+      arrify: 2.0.1
+      minimatch: 3.0.4
+    dev: false
+    engines:
+      node: '>=8'
+    resolution:
+      integrity: sha512-lDmx79y1z6i7RNx0ZGCPq1bzJ6ZoDDKbvh7jxr9SJcWLkShMzXrHbYVpTdnhNM5MXpDUxCQ4DgqVttVXlBgiBQ==
   /nan/2.14.2:
     dev: false
     resolution:
@@ -11691,6 +11815,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-fnWVljUchTro6RiCFvCXBbNhJc2NijN7oIQxbwsyL0buWJPG85v81ehlHI9fXrJsMNgTofEoWIQeClKpgxFLrg==
+  /please-upgrade-node/3.2.0:
+    dependencies:
+      semver-compare: 1.0.0
+    dev: false
+    resolution:
+      integrity: sha512-gQR3WpIgNIKwBMVLkpMUeR3e1/E1y42bqDQZfql+kDeXd8COYfM8PQA4X6y7a8u9Ua9FHmsrrmirW2vHs45hWg==
   /pn/1.1.0:
     dev: false
     resolution:
@@ -11957,6 +12087,23 @@ packages:
       node: '>= 0.8'
     resolution:
       integrity: sha1-t+PqQkNaTJsnWdmeDyAesZWALuE=
+  /pretty-quick/3.1.0_prettier@2.3.0:
+    dependencies:
+      chalk: 3.0.0
+      execa: 4.1.0
+      find-up: 4.1.0
+      ignore: 5.1.8
+      mri: 1.1.6
+      multimatch: 4.0.0
+      prettier: 2.3.0
+    dev: false
+    engines:
+      node: '>=10.13'
+    hasBin: true
+    peerDependencies:
+      prettier: '>=2.0.0'
+    resolution:
+      integrity: sha512-DtxIxksaUWCgPFN7E1ZZk4+Aav3CCuRdhrDSFZENb404sYMtuo9Zka823F+Mgeyt8Zt3bUiCjFzzWYE9LYqkmQ==
   /prismjs/1.23.0:
     dev: false
     optionalDependencies:
@@ -12872,6 +13019,15 @@ packages:
     dev: false
     resolution:
       integrity: sha512-W8LucSynKUIDu9ylraa7ueVZ7hc0uAgJBxVsQSKOXOyle8a93qXhcz+XAXZ8bIq2d6i4Ehddn6Evt+0/UwKk6Q==
+  /restore-cursor/3.1.0:
+    dependencies:
+      onetime: 5.1.2
+      signal-exit: 3.0.3
+    dev: false
+    engines:
+      node: '>=8'
+    resolution:
+      integrity: sha512-l+sSefzHpj5qimhFSE5a8nufZYAM3sBSVMAPtYkmC+4EH2anSGaEMXSD0izRQbu9nfyQ9y5JrVmp7E8oZrUjvA==
   /ret/0.1.15:
     dev: false
     engines:
@@ -12930,6 +13086,14 @@ packages:
     dev: false
     resolution:
       integrity: sha1-6Eg5bwV9Ij8kOGkkYY4laUFh7Ec=
+  /rxjs/6.6.7:
+    dependencies:
+      tslib: 1.14.1
+    dev: false
+    engines:
+      npm: '>=2.0.0'
+    resolution:
+      integrity: sha512-hTdwr+7yYNIT5n4AMYp85KA6yw2Va0FLa3Rguvbpa4W3I5xynaBZo41cM3XM+4Q6fRMj3sBYIR1VAmZMXYJvRQ==
   /safe-buffer/5.1.1:
     dev: false
     resolution:
@@ -13064,6 +13228,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-aVmbPOfViZqOZPgRBT0+3u4yZFHpmnIghLMlAcb5/xhp5ZtB/RVnKhz5vl2M32CLXAqR4kha9zfhNg0Lf/sxKA==
+  /semver-compare/1.0.0:
+    dev: false
+    resolution:
+      integrity: sha1-De4hahyUGrN+nvsXiPavxf9VN/w=
   /semver/5.7.1:
     dev: false
     hasBin: true
@@ -13269,6 +13437,16 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==
+  /slice-ansi/3.0.0:
+    dependencies:
+      ansi-styles: 4.3.0
+      astral-regex: 2.0.0
+      is-fullwidth-code-point: 3.0.0
+    dev: false
+    engines:
+      node: '>=8'
+    resolution:
+      integrity: sha512-pSyv7bSTC7ig9Dcgbw9AuRNUb5k5V6oDudjZoMBSr13qpLBG7tB+zgCkARjq7xIUgdz5P1Qe8u+rSGdouOOIyQ==
   /slice-ansi/4.0.0:
     dependencies:
       ansi-styles: 4.3.0
@@ -13727,6 +13905,16 @@ packages:
     dev: false
     resolution:
       integrity: sha512-hkRX8U1WjJFd8LsDJ2yQ/wWWxaopEsABU1XfkM8A+j0+85JAGppt16cr1Whg6KIbb4okU6Mql6BOj+uup/wKeA==
+  /stringify-object/3.3.0:
+    dependencies:
+      get-own-enumerable-property-symbols: 3.0.2
+      is-obj: 1.0.1
+      is-regexp: 1.0.0
+    dev: false
+    engines:
+      node: '>=4'
+    resolution:
+      integrity: sha512-rHqiFh1elqCQ9WPLIC8I0Q/g/wj5J1eMkyoiD6eoQApWHP0FtlK7rqnhmabL5VUY9JQCcqwwvlOaSuutekgyrw==
   /strip-ansi/3.0.1:
     dependencies:
       ansi-regex: 2.1.1
@@ -14098,6 +14286,10 @@ packages:
       node: '>=10'
     resolution:
       integrity: sha512-dTEWWNu6JmeVXY0ZYoPuH5cRIwc0MeGbJwah9KUNYSJwommQpCzTySTpEe8Gs1J23aeWEuAobe4Ag7EHVt/LOg==
+  /through/2.3.8:
+    dev: false
+    resolution:
+      integrity: sha1-DdTJ/6q8NXlgsbckEV1+Doai4fU=
   /through2/2.0.5:
     dependencies:
       readable-stream: 2.3.7
@@ -15487,8 +15679,10 @@ packages:
       eslint-plugin-jest: 24.3.6_eslint@7.26.0
       eslint-plugin-react: 7.23.2_eslint@7.26.0
       jest: 26.6.3
+      lint-staged: 11.0.0
       prettier: 2.3.0
       prettier-package-json: 2.5.0
+      pretty-quick: 3.1.0_prettier@2.3.0
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
       webpack: 5.37.1_webpack-cli@4.7.0
@@ -15496,7 +15690,7 @@ packages:
     dev: false
     name: '@rush-temp/components'
     resolution:
-      integrity: sha512-BDTxgU8hUsdXTFLKo4T3EPkc7v+QZmWFrgizS95CQXTPWNx7TTLTuTJr2WtrxbHrydLOFV6aqOh0w4ld/4JUKg==
+      integrity: sha512-0UU8O/TYjZG94WcNEk35zSjRSUixla540EJ4u/fI8bycG0Ig0wWwpo7ptQ6niz/cFg7TzL1kQKUsBn2uXOhY0Q==
       tarball: file:projects/components.tgz
     version: 0.0.0
   file:projects/eslint-config.tgz:
@@ -15514,10 +15708,14 @@ packages:
   file:projects/hl.tgz_webpack@5.37.1:
     dependencies:
       eslint: 7.26.0
+      eslint-plugin-jest: 24.3.6_eslint@7.26.0
       eslint-plugin-react: 7.23.2_eslint@7.26.0
       jest: 26.6.3
+      lint-staged: 11.0.0
       next: 10.2.0_aacd4ffc5347d1736b1d0e3d6655123b
+      prettier: 2.3.0
       prettier-package-json: 2.5.0
+      pretty-quick: 3.1.0_prettier@2.3.0
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
     dev: false
@@ -15526,16 +15724,20 @@ packages:
     peerDependencies:
       webpack: '*'
     resolution:
-      integrity: sha512-GZxPiXIGGhvzgGgh+JgbhGIRvcs6bwevcaqN9UBQWizIm0itLZaeXTKFSwE9JEJOgk37iX8YhrJQvDpMIMnxAA==
+      integrity: sha512-rzI3r4CatgLDjRSnVAotUBwvwOuwE4MMZi1Q9+sC4YY2VXAUSf8NkDbOmRan7XSYvzGTbiaZmDX6eCd4RWhQ5A==
       tarball: file:projects/hl.tgz
     version: 0.0.0
   file:projects/mnt.tgz_webpack@5.37.1:
     dependencies:
       eslint: 7.26.0
+      eslint-plugin-jest: 24.3.6_eslint@7.26.0
       eslint-plugin-react: 7.23.2_eslint@7.26.0
       jest: 26.6.3
+      lint-staged: 11.0.0
       next: 10.2.0_aacd4ffc5347d1736b1d0e3d6655123b
+      prettier: 2.3.0
       prettier-package-json: 2.5.0
+      pretty-quick: 3.1.0_prettier@2.3.0
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
     dev: false
@@ -15544,7 +15746,7 @@ packages:
     peerDependencies:
       webpack: '*'
     resolution:
-      integrity: sha512-OqTOVJetNLInup0DF36rqPM3HtnTzPTx5xrQKGOMUFY8kOKu6P8M2x7PtYsqH1QIqjb7mvH42fGQoWoCN7Lc1w==
+      integrity: sha512-L6ORbhQDJRPqGYxpoVMZwqnFTJ01FIISPC9cmkfcZyYAcRnp8ncMgLhfLgSS4Y9D4ONW/bl3XgjfHBsWEq+yAw==
       tarball: file:projects/mnt.tgz
     version: 0.0.0
 specifiers:
@@ -15564,8 +15766,11 @@ specifiers:
   eslint-plugin-jest: ~24.3.6
   eslint-plugin-react: ~7.23.2
   jest: ~26.6.3
+  lint-staged: ~11.0.0
   next: 10.2.0
+  prettier: ^2.3.0
   prettier-package-json: ~2.5.0
+  pretty-quick: ^3.1.0
   react: 17.0.2
   react-dom: 17.0.2
   webpack: ~5.37.1
