@@ -8,8 +8,7 @@
   "scripts": {
     "build": "",
     "lint": "",
-    "lint-staged": "",
-    "sort-deps": "prettier-package-json --write ./package.json",
+    "lint-staged": "lint-staged",
     "start": "",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,6 +18,13 @@
     "eslint-plugin-react": "~7.23.2"
   },
   "devDependencies": {
+    "lint-staged": "~11.0.0",
     "prettier-package-json": "~2.5.0"
+  },
+  "lint-staged": {
+    "package.json": [
+      "prettier-package-json --write ./package.json",
+      "git add ."
+    ]
   }
 }

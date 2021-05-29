@@ -15698,11 +15698,12 @@ packages:
       eslint: 7.26.0
       eslint-plugin-jest: 24.3.6_eslint@7.26.0
       eslint-plugin-react: 7.23.2_eslint@7.26.0
+      lint-staged: 11.0.0
       prettier-package-json: 2.5.0
     dev: false
     name: '@rush-temp/eslint-config'
     resolution:
-      integrity: sha512-JBjC4PGGu5Xg2XrR/gGtc7RfUuUJ6uaDU3ibiMn3IJbzyPp9DjAzQyrFgvFxpm7y5cfvBoPKnjOa/WEF7FyewA==
+      integrity: sha512-4gvPivB7guhxlcGCbES9MRpj+lcmk3xPGJJjmNRYBeD2lbTsvITzb3Glq9eqvft038tR02QPl3cnPBdec64Zpg==
       tarball: file:projects/eslint-config.tgz
     version: 0.0.0
   file:projects/hl.tgz_webpack@5.37.1:
