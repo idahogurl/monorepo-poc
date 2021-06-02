@@ -7,7 +7,6 @@ dependencies:
   '@rush-temp/heft-nextjs-rig': file:projects/heft-nextjs-rig.tgz
   '@rush-temp/hl': file:projects/hl.tgz_webpack@5.37.1
   '@rush-temp/mnt': file:projects/mnt.tgz_webpack@5.37.1
-  '@rushstack/heft-webpack5-plugin': 0.1.18_webpack-cli@4.7.0
   '@storybook/addon-actions': 6.2.9_react-dom@17.0.2+react@17.0.2
   '@storybook/addon-essentials': 6.2.9_70bd11b3028e8abfb805427b007fbe50
   '@storybook/addon-links': 6.2.9_react-dom@17.0.2+react@17.0.2
@@ -17,11 +16,9 @@ dependencies:
   eslint-plugin-jest: 24.3.6_eslint@7.26.0
   eslint-plugin-react: 7.23.2_eslint@7.26.0
   jest: 26.6.3
-  jest-standard-reporter: 2.0.0
   lint-staged: 11.0.0
   next: 10.2.0_aacd4ffc5347d1736b1d0e3d6655123b
   prettier: 2.3.0
-  prettier-package-json: 2.5.0
   pretty-quick: 3.1.0_prettier@2.3.0
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
@@ -2153,17 +2150,6 @@ packages:
   /@rushstack/heft-webpack5-plugin/0.1.18_2f4b7ff52bfe617a80f6ca72ec70db9a:
     dependencies:
       '@rushstack/heft': 0.31.1
-      '@rushstack/node-core-library': 3.38.0
-      webpack: 5.35.1_webpack-cli@4.7.0
-      webpack-dev-server: 3.11.2_webpack-cli@4.7.0+webpack@5.35.1
-    dev: false
-    peerDependencies:
-      '@rushstack/heft': ^0.31.1
-      webpack-cli: '*'
-    resolution:
-      integrity: sha512-S+FjqnaOLQjox9+Abk8K5m5kFKscqb07F96OGUfm1/omiwUvx/YFqY/qBOZz5dyBI28T3WdVQhdduzuNrheqFA==
-  /@rushstack/heft-webpack5-plugin/0.1.18_webpack-cli@4.7.0:
-    dependencies:
       '@rushstack/node-core-library': 3.38.0
       webpack: 5.35.1_webpack-cli@4.7.0
       webpack-dev-server: 3.11.2_webpack-cli@4.7.0+webpack@5.35.1
@@ -12063,6 +12049,20 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-0S55YC6va8oJ9qMLM7gxGZxr0T7YrSAMrvu3HwkDlZcsAC+qq8xuUxHWwjm8xqKpogYaM8PfGC0rdlJsG66N6g==
+  /prettier-package-json/2.6.0:
+    dependencies:
+      commander: 4.1.1
+      cosmiconfig: 7.0.0
+      fs-extra: 10.0.0
+      glob: 7.1.7
+      minimatch: 3.0.4
+      parse-author: 2.0.0
+      sort-object-keys: 1.1.3
+      sort-order: 1.0.1
+    dev: false
+    hasBin: true
+    resolution:
+      integrity: sha512-CS7utu4Jfm6xxCrIA4zZiOtNIwZhq0EyHnK01vmliV2QRU+L6/Ywy1tB6uUpT9Lwt5qpvRMHNApa6jxoRHfafA==
   /prettier/2.1.2:
     dev: false
     engines:
@@ -15723,7 +15723,7 @@ packages:
     dev: false
     name: '@rush-temp/components'
     resolution:
-      integrity: sha512-0OKY2c8t5p+NfYVm/VzAH2ailZWf7D01i6/4U7/0YbHWWFXenTPLp3vtX0RhRpfsssRyaKiAEx1yBx5HVwjmuA==
+      integrity: sha512-0UU8O/TYjZG94WcNEk35zSjRSUixla540EJ4u/fI8bycG0Ig0wWwpo7ptQ6niz/cFg7TzL1kQKUsBn2uXOhY0Q==
       tarball: file:projects/components.tgz
     version: 0.0.0
   file:projects/eslint-config.tgz:
@@ -15743,10 +15743,12 @@ packages:
     dependencies:
       '@rushstack/heft': 0.31.1
       jest-standard-reporter: 2.0.0
+      lint-staged: 11.0.0
+      prettier-package-json: 2.6.0
     dev: false
     name: '@rush-temp/heft-nextjs-rig'
     resolution:
-      integrity: sha512-dywKcFc+j3TJT4OC91Mp2nucfsEhA1ksczA6zI8TncjPtGg4g1Uf8AsNlL11FeiX+jL6flcTuX97qP34qoKOvw==
+      integrity: sha512-4ilji3hrl5UmaYYJac10y8zP2rmwZIGg5DwnCrC6qUrd3E90905GElbSJEaI4Ryj8JYEUo1bX/5GoMKC+YlCkQ==
       tarball: file:projects/heft-nextjs-rig.tgz
     version: 0.0.0
   file:projects/hl.tgz_webpack@5.37.1:
@@ -15769,7 +15771,7 @@ packages:
     peerDependencies:
       webpack: '*'
     resolution:
-      integrity: sha512-2ql9cKJHd0D8sdu1UW9iCuYeZD9zBY1hlJr4gquo1GW+H7/LwFT2bV+gojhTwAfenxyUghZ42vFSJv4//oBCnQ==
+      integrity: sha512-cMPrqRtvy3phLKM77yDDkK9Jc+GL/fillnGR8lVL6lM07nFogHL1y27ykXqNYk2IFvZl1+klaJ6GIbhq2uxqPg==
       tarball: file:projects/hl.tgz
     version: 0.0.0
   file:projects/mnt.tgz_webpack@5.37.1:
@@ -15791,7 +15793,7 @@ packages:
     peerDependencies:
       webpack: '*'
     resolution:
-      integrity: sha512-L6ORbhQDJRPqGYxpoVMZwqnFTJ01FIISPC9cmkfcZyYAcRnp8ncMgLhfLgSS4Y9D4ONW/bl3XgjfHBsWEq+yAw==
+      integrity: sha512-Xp4PsAVIUrZf775UPrtorX8lvUL2DP6TW0fJLvaHEdGswk8W7T/aJZzb5UmnDdcVkS9zSwpfV9kkAJrvL3xw5w==
       tarball: file:projects/mnt.tgz
     version: 0.0.0
 specifiers:
@@ -15803,7 +15805,6 @@ specifiers:
   '@rush-temp/heft-nextjs-rig': file:./projects/heft-nextjs-rig.tgz
   '@rush-temp/hl': file:./projects/hl.tgz
   '@rush-temp/mnt': file:./projects/mnt.tgz
-  '@rushstack/heft-webpack5-plugin': ~0.1.18
   '@storybook/addon-actions': ^6.2.9
   '@storybook/addon-essentials': ^6.2.9
   '@storybook/addon-links': ^6.2.9
@@ -15813,11 +15814,9 @@ specifiers:
   eslint-plugin-jest: ~24.3.6
   eslint-plugin-react: ~7.23.2
   jest: ~26.6.3
-  jest-standard-reporter: ~2.0.0
   lint-staged: ~11.0.0
   next: 10.2.0
   prettier: ^2.3.0
-  prettier-package-json: ~2.5.0
   pretty-quick: ^3.1.0
   react: 17.0.2
   react-dom: 17.0.2
