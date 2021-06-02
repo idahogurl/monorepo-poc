@@ -1,0 +1,20 @@
+{
+  "name": "@healthline/heft-nextjs-rig",
+  "version": "0.0.1",
+  "description": "A rig package for Next.js projects that build using Heft",
+  "scripts": {
+    "build": "",
+    "lint": "",
+    "sort-deps": "",
+    "test": "",
+    "lint-staged": ""
+  },
+  "author": "Healthline",
+  "license": "ISC",
+  "lint-staged": {
+    "package.json": [
+      "prettier-package-json --write ./package.json",
+      "git add ."
+    ]
+  } 
+}

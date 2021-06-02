@@ -1,0 +1,3 @@
+{
+    "preset": "../node_modules/@healthline/heft-nextjs-rig/profiles/default/jest-shared.config.json"
+}

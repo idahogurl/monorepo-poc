@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "",
   "license": "ISC",
-  "author": "",
+  "author": "Healthline",
   "main": "index.js",
   "scripts": {
     "build": "",

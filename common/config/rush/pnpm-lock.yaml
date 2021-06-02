@@ -4,8 +4,10 @@ dependencies:
   '@babel/preset-react': 7.13.13_@babel+core@7.14.2
   '@rush-temp/components': file:projects/components.tgz
   '@rush-temp/eslint-config': file:projects/eslint-config.tgz
+  '@rush-temp/heft-nextjs-rig': file:projects/heft-nextjs-rig.tgz
   '@rush-temp/hl': file:projects/hl.tgz_webpack@5.37.1
   '@rush-temp/mnt': file:projects/mnt.tgz_webpack@5.37.1
+  '@rushstack/heft-webpack5-plugin': 0.1.18_webpack-cli@4.7.0
   '@storybook/addon-actions': 6.2.9_react-dom@17.0.2+react@17.0.2
   '@storybook/addon-essentials': 6.2.9_70bd11b3028e8abfb805427b007fbe50
   '@storybook/addon-links': 6.2.9_react-dom@17.0.2+react@17.0.2
@@ -15,6 +17,7 @@ dependencies:
   eslint-plugin-jest: 24.3.6_eslint@7.26.0
   eslint-plugin-react: 7.23.2_eslint@7.26.0
   jest: 26.6.3
+  jest-standard-reporter: 2.0.0
   lint-staged: 11.0.0
   next: 10.2.0_aacd4ffc5347d1736b1d0e3d6655123b
   prettier: 2.3.0
@@ -1498,7 +1501,7 @@ packages:
     dependencies:
       '@jest/types': 26.6.2
       '@types/node': 15.0.3
-      chalk: 4.0.0
+      chalk: 4.1.1
       jest-message-util: 26.6.2
       jest-util: 26.6.2
       slash: 3.0.0
@@ -1512,7 +1515,7 @@ packages:
       '@jest/console': 25.5.0
       '@jest/reporters': 25.4.0
       '@jest/test-result': 25.5.0
-      '@jest/transform': 25.4.0
+      '@jest/transform': 25.5.1
       '@jest/types': 25.5.0
       ansi-escapes: 4.3.2
       chalk: 3.0.0
@@ -1527,7 +1530,7 @@ packages:
       jest-resolve-dependencies: 25.5.4
       jest-runner: 25.5.4
       jest-runtime: 25.5.4
-      jest-snapshot: 25.4.0
+      jest-snapshot: 25.5.1
       jest-util: 25.5.0
       jest-validate: 25.5.0
       jest-watcher: 25.5.0
@@ -1648,7 +1651,7 @@ packages:
       '@bcoe/v8-coverage': 0.2.3
       '@jest/console': 25.5.0
       '@jest/test-result': 25.5.0
-      '@jest/transform': 25.4.0
+      '@jest/transform': 25.5.1
       '@jest/types': 25.5.0
       chalk: 3.0.0
       collect-v8-coverage: 1.0.1
@@ -2137,38 +2140,49 @@ packages:
       eslint: ^6.0.0 || ^7.0.0
     resolution:
       integrity: sha512-8+AqxybpcJJuxn0+fsWwMIMj2g2tLfPrbOyhEi+Rozh36eTmgGXF45qh8bHE1gicsX4yGDj2ob1P62oQV6hs3g==
-  /@rushstack/heft-config-file/0.3.21:
+  /@rushstack/heft-config-file/0.4.0:
     dependencies:
-      '@rushstack/node-core-library': 3.37.0
+      '@rushstack/node-core-library': 3.38.0
       '@rushstack/rig-package': 0.2.12
       jsonpath-plus: 4.0.0
     dev: false
     engines:
       node: '>=10.13.0'
     resolution:
-      integrity: sha512-2/oldp8Xu4ZZwfTp4k481lFGyyDxN/DMPD7ERjaWUDOTMf+iPsFKAZJAn+Fx6O9ufFMGZEeWsolexjrBV9uiTA==
-  /@rushstack/heft-webpack5-plugin/0.1.13_e95387d6c4ae62adbdf00d712afdf2e6:
+      integrity: sha512-I3InE54GRmmu/Sg77O0gQmYYigZ8she0OUarZ+9anTs1juKszjy2l89D34MDTUXRsT1nEdJlDAxoJkqNNAiiTA==
+  /@rushstack/heft-webpack5-plugin/0.1.18_2f4b7ff52bfe617a80f6ca72ec70db9a:
     dependencies:
-      '@rushstack/heft': 0.30.4
-      '@rushstack/node-core-library': 3.37.0
+      '@rushstack/heft': 0.31.1
+      '@rushstack/node-core-library': 3.38.0
       webpack: 5.35.1_webpack-cli@4.7.0
       webpack-dev-server: 3.11.2_webpack-cli@4.7.0+webpack@5.35.1
     dev: false
     peerDependencies:
-      '@rushstack/heft': ^0.30.4
+      '@rushstack/heft': ^0.31.1
       webpack-cli: '*'
     resolution:
-      integrity: sha512-IsVv0zwcYY1lhnh+SbUGiU2HlSAMAvczevoyE2ylZHBJEOt+3sqQpHhIsYMBdh71cV5YTzwplUM5w4adTGu3Dg==
-  /@rushstack/heft/0.30.4:
+      integrity: sha512-S+FjqnaOLQjox9+Abk8K5m5kFKscqb07F96OGUfm1/omiwUvx/YFqY/qBOZz5dyBI28T3WdVQhdduzuNrheqFA==
+  /@rushstack/heft-webpack5-plugin/0.1.18_webpack-cli@4.7.0:
+    dependencies:
+      '@rushstack/node-core-library': 3.38.0
+      webpack: 5.35.1_webpack-cli@4.7.0
+      webpack-dev-server: 3.11.2_webpack-cli@4.7.0+webpack@5.35.1
+    dev: false
+    peerDependencies:
+      '@rushstack/heft': ^0.31.1
+      webpack-cli: '*'
+    resolution:
+      integrity: sha512-S+FjqnaOLQjox9+Abk8K5m5kFKscqb07F96OGUfm1/omiwUvx/YFqY/qBOZz5dyBI28T3WdVQhdduzuNrheqFA==
+  /@rushstack/heft/0.31.1:
     dependencies:
       '@jest/core': 25.4.0
       '@jest/reporters': 25.4.0
       '@jest/transform': 25.4.0
-      '@rushstack/heft-config-file': 0.3.21
-      '@rushstack/node-core-library': 3.37.0
+      '@rushstack/heft-config-file': 0.4.0
+      '@rushstack/node-core-library': 3.38.0
       '@rushstack/rig-package': 0.2.12
       '@rushstack/ts-command-line': 4.7.10
-      '@rushstack/typings-generator': 0.3.5
+      '@rushstack/typings-generator': 0.3.6
       '@types/tapable': 1.0.6
       argparse: 1.0.10
       chokidar: 3.4.3
@@ -2188,8 +2202,8 @@ packages:
       node: '>=10.13.0'
     hasBin: true
     resolution:
-      integrity: sha512-Ug532EHLkmzEaMsnf1shIk1x6Vf8P8qq//m1JHVej7qhULq6U65/j/QbOhbRSo3+BLsRpokIElvGkgQf2j9w2g==
-  /@rushstack/node-core-library/3.37.0:
+      integrity: sha512-RkC2JWB48zSKXsw1j/LCIF4NTIoSzbSLV4YpV1x6cjDX9vOp/AFY8KDX8u2I8De6so4myRoyLtaRnj+2XhnL7Q==
+  /@rushstack/node-core-library/3.38.0:
     dependencies:
       '@types/node': 10.17.13
       colors: 1.2.5
@@ -2202,7 +2216,7 @@ packages:
       z-schema: 3.18.4
     dev: false
     resolution:
-      integrity: sha512-b0OGvl20zfepytLBnKsOtemtiadNZAVolXxaSYssV9VjXaLPF97oLvtLfwc58BX05ufIsrKZgXatnRo8YeffNg==
+      integrity: sha512-cmvl0yQx8sSmbuXwiRYJi8TO+jpTtrLJQ8UmFHhKvgPVJAW8cV8dnpD1Xx/BvTGrJZ2XtRAIkAhBS9okBnap4w==
   /@rushstack/rig-package/0.2.12:
     dependencies:
       resolve: 1.17.0
@@ -2223,15 +2237,15 @@ packages:
     dev: false
     resolution:
       integrity: sha512-8t042g8eerypNOEcdpxwRA3uCmz0duMo21rG4Z2mdz7JxJeylDmzjlU3wDdef2t3P1Z61JCdZB6fbm1Mh0zi7w==
-  /@rushstack/typings-generator/0.3.5:
+  /@rushstack/typings-generator/0.3.6:
     dependencies:
-      '@rushstack/node-core-library': 3.37.0
+      '@rushstack/node-core-library': 3.38.0
       '@types/node': 10.17.13
       chokidar: 3.4.3
       glob: 7.0.6
     dev: false
     resolution:
-      integrity: sha512-/HGHiN8yuWu05LKaKeYBYxoFXSGBzQzXrzwyiD/l76DnYHMZcDzZ7tem5MqeaOLC+aLKWAkim+4z4ghDNC+7fA==
+      integrity: sha512-wAsg/ANeZX1I5re3sYZYX3kKavWL364HUoLrzZ8KKEeDELWPdByzY4kk6I9MyMjdyOxhNadTMypdj/gjfeM/NQ==
   /@sinonjs/commons/1.8.3:
     dependencies:
       type-detect: 4.0.8
@@ -7625,7 +7639,7 @@ packages:
       integrity: sha512-BRdNm8hbWzFzWHERTrejLqwHDfS4GibPoq5wjTPIoJHoBtKGPg3xAFfxmM+9ztbXelxcf2hwQcaz1PtmFeue8g==
   /generic-names/2.0.1:
     dependencies:
-      loader-utils: 1.2.3
+      loader-utils: 1.4.0
     dev: false
     resolution:
       integrity: sha512-kPCHWa1m9wGG/OwQpeweTwM/PYiQLrUIxXbt/P4Nic3LbGjCP0YwrALHW1uNLKZ0LIMg+RF+XRlj2ekT9ZlZAQ==
@@ -9436,7 +9450,7 @@ packages:
       '@babel/code-frame': 7.12.13
       '@jest/types': 26.6.2
       '@types/stack-utils': 2.0.0
-      chalk: 4.0.0
+      chalk: 4.1.1
       graceful-fs: 4.2.6
       micromatch: 4.0.4
       pretty-format: 26.6.2
@@ -9531,7 +9545,7 @@ packages:
       jest-pnp-resolver: 1.2.2_jest-resolve@25.5.1
       read-pkg-up: 7.0.1
       realpath-native: 2.0.0
-      resolve: 1.17.0
+      resolve: 1.20.0
       slash: 3.0.0
     dev: false
     engines:
@@ -9694,7 +9708,7 @@ packages:
       integrity: sha512-S5wqyz0DXnNJPd/xfIzZ5Xnp1HrJWBczg8mMfMpN78OJ5eDxXyf+Ygld9wX1DnUWbIbhM1YDY95NjR4CBXkb2g==
   /jest-snapshot/25.4.0:
     dependencies:
-      '@babel/types': 7.8.3
+      '@babel/types': 7.14.2
       '@jest/types': 25.5.0
       '@types/prettier': 1.19.1
       chalk: 3.0.0
@@ -9758,6 +9772,17 @@ packages:
       node: '>= 10.14.2'
     resolution:
       integrity: sha512-OLhxz05EzUtsAmOMzuupt1lHYXCNib0ECyuZ/PZOx9TrZcC8vL0x+DUG3TL+GLX3yHG45e6YGjIm0XwDc3q3og==
+  /jest-standard-reporter/2.0.0:
+    dependencies:
+      '@jest/console': 26.6.2
+      chalk: 4.1.1
+      jest-util: 26.6.2
+      path: 0.12.7
+      slash: 3.0.0
+      string-length: 4.0.2
+    dev: false
+    resolution:
+      integrity: sha512-JhV3qzNzs5u/T1mzN9ivVrf2i4xYOQJgyPMKQbAmwRAZIprCpkikt8GF1kQKrP5ch1qBMn5xYyNdUUOKi8bltA==
   /jest-util/25.5.0:
     dependencies:
       '@jest/types': 25.5.0
@@ -11717,6 +11742,13 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==
+  /path/0.12.7:
+    dependencies:
+      process: 0.11.10
+      util: 0.10.3
+    dev: false
+    resolution:
+      integrity: sha1-1NwqUGxM4hl+tIHr/NWzbAFAsQ8=
   /pbkdf2/3.1.2:
     dependencies:
       create-hash: 1.2.0
@@ -11947,7 +11979,7 @@ packages:
       css-modules-loader-core: 1.1.0
       generic-names: 2.0.1
       lodash.camelcase: 4.3.0
-      postcss: 7.0.32
+      postcss: 7.0.35
       string-hash: 1.1.3
     dev: false
     resolution:
@@ -14885,6 +14917,7 @@ packages:
     resolution:
       integrity: sha1-DwWkCu90+eWVHiDvv0SxGHHlZBA=
   /uuid/3.4.0:
+    deprecated: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
     dev: false
     hasBin: true
     resolution:
@@ -15281,7 +15314,7 @@ packages:
       '@webassemblyjs/wasm-edit': 1.11.0
       '@webassemblyjs/wasm-parser': 1.11.0
       acorn: 8.2.4
-      browserslist: 4.16.1
+      browserslist: 4.16.6
       chrome-trace-event: 1.0.3
       enhanced-resolve: 5.8.2
       es-module-lexer: 0.4.1
@@ -15668,8 +15701,8 @@ packages:
       '@babel/preset-env': 7.14.2_@babel+core@7.14.2
       '@babel/preset-react': 7.13.13_@babel+core@7.14.2
       '@rushstack/eslint-config': 2.3.4_eslint@7.26.0
-      '@rushstack/heft': 0.30.4
-      '@rushstack/heft-webpack5-plugin': 0.1.13_e95387d6c4ae62adbdf00d712afdf2e6
+      '@rushstack/heft': 0.31.1
+      '@rushstack/heft-webpack5-plugin': 0.1.18_2f4b7ff52bfe617a80f6ca72ec70db9a
       '@storybook/addon-actions': 6.2.9_react-dom@17.0.2+react@17.0.2
       '@storybook/addon-essentials': 6.2.9_70bd11b3028e8abfb805427b007fbe50
       '@storybook/addon-links': 6.2.9_react-dom@17.0.2+react@17.0.2
@@ -15690,7 +15723,7 @@ packages:
     dev: false
     name: '@rush-temp/components'
     resolution:
-      integrity: sha512-0UU8O/TYjZG94WcNEk35zSjRSUixla540EJ4u/fI8bycG0Ig0wWwpo7ptQ6niz/cFg7TzL1kQKUsBn2uXOhY0Q==
+      integrity: sha512-0OKY2c8t5p+NfYVm/VzAH2ailZWf7D01i6/4U7/0YbHWWFXenTPLp3vtX0RhRpfsssRyaKiAEx1yBx5HVwjmuA==
       tarball: file:projects/components.tgz
     version: 0.0.0
   file:projects/eslint-config.tgz:
@@ -15706,8 +15739,19 @@ packages:
       integrity: sha512-4gvPivB7guhxlcGCbES9MRpj+lcmk3xPGJJjmNRYBeD2lbTsvITzb3Glq9eqvft038tR02QPl3cnPBdec64Zpg==
       tarball: file:projects/eslint-config.tgz
     version: 0.0.0
+  file:projects/heft-nextjs-rig.tgz:
+    dependencies:
+      '@rushstack/heft': 0.31.1
+      jest-standard-reporter: 2.0.0
+    dev: false
+    name: '@rush-temp/heft-nextjs-rig'
+    resolution:
+      integrity: sha512-dywKcFc+j3TJT4OC91Mp2nucfsEhA1ksczA6zI8TncjPtGg4g1Uf8AsNlL11FeiX+jL6flcTuX97qP34qoKOvw==
+      tarball: file:projects/heft-nextjs-rig.tgz
+    version: 0.0.0
   file:projects/hl.tgz_webpack@5.37.1:
     dependencies:
+      '@rushstack/heft': 0.31.1
       eslint: 7.26.0
       eslint-plugin-jest: 24.3.6_eslint@7.26.0
       eslint-plugin-react: 7.23.2_eslint@7.26.0
@@ -15725,7 +15769,7 @@ packages:
     peerDependencies:
       webpack: '*'
     resolution:
-      integrity: sha512-rzI3r4CatgLDjRSnVAotUBwvwOuwE4MMZi1Q9+sC4YY2VXAUSf8NkDbOmRan7XSYvzGTbiaZmDX6eCd4RWhQ5A==
+      integrity: sha512-2ql9cKJHd0D8sdu1UW9iCuYeZD9zBY1hlJr4gquo1GW+H7/LwFT2bV+gojhTwAfenxyUghZ42vFSJv4//oBCnQ==
       tarball: file:projects/hl.tgz
     version: 0.0.0
   file:projects/mnt.tgz_webpack@5.37.1:
@@ -15756,8 +15800,10 @@ specifiers:
   '@babel/preset-react': ~7.13.13
   '@rush-temp/components': file:./projects/components.tgz
   '@rush-temp/eslint-config': file:./projects/eslint-config.tgz
+  '@rush-temp/heft-nextjs-rig': file:./projects/heft-nextjs-rig.tgz
   '@rush-temp/hl': file:./projects/hl.tgz
   '@rush-temp/mnt': file:./projects/mnt.tgz
+  '@rushstack/heft-webpack5-plugin': ~0.1.18
   '@storybook/addon-actions': ^6.2.9
   '@storybook/addon-essentials': ^6.2.9
   '@storybook/addon-links': ^6.2.9
@@ -15767,6 +15813,7 @@ specifiers:
   eslint-plugin-jest: ~24.3.6
   eslint-plugin-react: ~7.23.2
   jest: ~26.6.3
+  jest-standard-reporter: ~2.0.0
   lint-staged: ~11.0.0
   next: 10.2.0
   prettier: ^2.3.0

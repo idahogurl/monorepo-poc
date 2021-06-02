@@ -395,6 +395,10 @@
     {
       "packageName": "@healthline/eslint-config",
       "projectFolder": "libs/eslint-config"
+    },
+    {
+      "packageName": "@healthline/heft-nextjs-rig",
+      "projectFolder": "rigs/nextjs"
     }
     // {
     //   /**

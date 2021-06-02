@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "license": "ISC",
-  "author": "Rebecca Vest",
+  "author": "Healthline",
   "main": "dist/main.js",
   "scripts": {
     "build": "webpack --mode production",
