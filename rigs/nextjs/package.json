@@ -1,4 +1,5 @@
 {
+  "private": true,
   "name": "@healthline/heft-nextjs-rig",
   "version": "0.0.1",
   "description": "A rig package for Next.js projects that build using Heft",
